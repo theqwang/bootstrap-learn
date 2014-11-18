@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>输入框组</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<script src="../bootstrap/js/jquery.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../bootstrap/js/holder.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="page-header">基本实例</h1>
+		<code>不要将表单组或栅格列（column）类直接和输入框组混合使用。而是将输入框组嵌套到表单组或栅格相关元素的内部。</code><br><br>
+		<div class="input-group">
+			<span class="input-group-addon">@</span>
+			<input type="text" class="form-control" placeholder="邮箱">
+		</div>
+		<br>
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="价格">
+			<span class="input-group-addon">.000</span>
+		</div>
+		<br>
+		<div class="input-group">
+			<span class="input-group-addon">WWW.</span>
+			<input type="text" class="form-control">
+			<span class="input-group-addon">.COM</span>
+		</div>
+
+		<h1 class="page-header">尺寸</h1>
+		<code>只有lg、default和sm三种，没有xs</code>
+		<div class="input-group input-group-lg">
+			<span class="input-group-addon">@</span>
+			<input type="text" class="form-control">
+		</div>
+		<br>
+		<div class="input-group">
+			<span class="input-group-addon">@</span>
+			<input type="text" class="form-control">
+		</div>
+		<br>
+		<div class="input-group input-group-sm">
+			<span class="input-group-addon">@</span>
+			<input type="text" class="form-control">
+		</div>
+
+		<h1 class="page-header">作为额外元素的多选框和单选框</h1>
+		<div class="input-group">
+			<span class="input-group-addon">
+				<input type="checkbox">
+			</span>
+			<input type="text" class="form-control">
+		</div>
+		<br>
+		<div class="input-group">
+			<span class="input-group-addon">
+				<input type="radio">
+			</span>
+			<input type="text" class="form-control">
+		</div>
+
+		<h1 class="page-header">输入框组添加按钮</h1>
+		<code>为输入框组添加按钮需要额外添加一层嵌套，不是 span.input-group-addon，而是添加 .input-group-btn 来包裹按钮元素。由于不同浏览器的默认样式无法被统一的重新赋值，所以才需要这样做。</code>
+		<div class="input-group">
+			<span class="input-group-btn">
+				<button class="btn btn-primary">GO</button>
+			</span>
+			<input type="text" class="form-control">
+		</div>
+		<br>
+		<div class="input-group">
+			<input type="text" class="form-control">
+			<span class="input-group-btn">
+				<button class="btn btn-primary" type="submit">
+					<span class="glyphicon glyphicon-search"></span>
+				</button>
+			</span>
+		</div>
+
+		<h1 class="page-header">作为额外元素的按钮式下拉菜单</h1>
+		<div class="input-group">
+			<span class="input-group-btn">
+				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					action<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="">111</a></li>
+					<li><a href="">222</a></li>
+					<li><a href="">333</a></li>
+				</ul>
+			</span>
+			<input type="text" class="form-control">
+		</div>
+		<br>
+		<div class="input-group">
+			<input type="text" class="form-control">
+			<span class="input-group-btn">
+				<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+					action<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="">111</a></li>
+					<li><a href="">222</a></li>
+					<li><a href="">333</a></li>
+				</ul>
+			</span>
+		</div>
+
+		<h1 class="page-header">作为额外元素的分裂式按钮下拉菜单</h1>
+		<div class="input-group">
+			<span class="input-group-btn">
+				<button class="btn btn-primary">action</button>
+				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="">111</a></li>
+					<li><a href="">222</a></li>
+					<li><a href="">333</a></li>
+				</ul>
+			</span>
+			<input type="text" class="form-control">
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+	</div>
+</body>
+</html>

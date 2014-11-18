@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航条</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<script src="../bootstrap/js/jquery.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../bootstrap/js/holder.min.js"></script>
+	<style>
+		body{padding-top:70px;}
+	</style>
+</head>
+<body>
+	<!-- 为了增强可访问性，务必给每个导航条加上 role="navigation" 属性。 -->
+	<nav class="navbar navbar-default  navbar-fixed-top navbar-inverse" role="navigation">
+	<!--导航条头部-->
+		<div class="navbar-header">
+			<!-- 导航条的标题头 -->
+			<a href="" class="navbar-brand">翻包</a>
+			<!-- 小屏幕时隐藏所有导航条连接，留下的一个按钮 -->
+			<!-- 下面的button按钮的data-target属性的值是导航条里所有连接的div的id值，还要加上#！！！！！！！！！！！！！！！！！！ -->
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#links">
+				<!-- 按钮图标 -->
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+
+	<!-- 导航条里的所有连接 -->
+		<!-- 下面的div要有一个id值！！！！用于指定小屏幕时隐藏的连接内容 -->
+		<div class="collapse navbar-collapse" id="links">
+			<!-- 所有普通链接 -->
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="">首页</a></li>
+				<li><a href="">连接</a></li>
+				<li>
+					<a href="" class="dropdown-toggle" data-toggle="dropdown">
+						更多<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="">111</a></li>
+						<li><a href="">222</a></li>
+						<li class="divider"></li>
+						<li><a href="">333</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- 导航条里的form表单 -->
+			<form action="" class="navbar-form navbar-right">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="search">
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</div>
+			</form>
+
+			<!-- 导航条里的普通按钮 -->
+			<button type="button" class="btn btn-primary navbar-btn pull-right">登陆</button>
+
+			<!-- 普通文本+非导航里的连接 -->
+			<p class="navbar-text">让我们一起探究包里的秘密</p>
+		</div>
+	</nav>
+
+	<!-- 网页内容 -->
+	<div class="container">
+		<p><code>固定在顶部需要为 body 元素设置内部（padding-top）</code></p>
+		<div class="row">
+			<div class="col-md-3">
+				<h1 class="page-header">标题</h1>
+				<img src="holder.js/270x270/sky" alt="">
+			</div>
+			<div class="col-md-3">
+				<h1 class="page-header">标题</h1>
+				<img src="holder.js/270x270/sky" alt="">
+			</div>
+			<div class="col-md-3">
+				<h1 class="page-header">标题</h1>
+				<img src="holder.js/270x270/sky" alt="">
+			</div>
+			<div class="col-md-3">
+				<h1 class="page-header">标题</h1>
+				<img src="holder.js/270x270/sky" alt="">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<h1 class="page-header">标题</h1>
+				<img src="holder.js/270x270/sky" alt="">
+			</div>
+			<div class="col-md-3">
+				<h1 class="page-header">标题</h1>
+				<img src="holder.js/270x270/sky" alt="">
+			</div>
+			<div class="col-md-3">
+				<h1 class="page-header">标题</h1>
+				<img src="holder.js/270x270/sky" alt="">
+			</div>
+			<div class="col-md-3">
+				<h1 class="page-header">标题</h1>
+				<img src="holder.js/270x270/sky" alt="">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<h1 class="page-header">标题</h1>
+				<img src="holder.js/270x270/sky" alt="">
+			</div>
+			<div class="col-md-3">
+				<h1 class="page-header">标题</h1>
+				<img src="holder.js/270x270/sky" alt="">
+			</div>
+			<div class="col-md-3">
+				<h1 class="page-header">标题</h1>
+				<img src="holder.js/270x270/sky" alt="">
+			</div>
+			<div class="col-md-3">
+				<h1 class="page-header">标题</h1>
+				<img src="holder.js/270x270/sky" alt="">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>模态框</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<script src="../bootstrap/js/jquery.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../bootstrap/js/holder.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#button1").click(function(){
+				$("#modal1").addClass("show");
+			});
+		});
+	</script>
+</head>
+<body >
+
+	<div class="container">
+		<h1 class="page-header">模态框<small>modal.js</small></h1>
+		<code>1.务必将模态框的 HTML 代码放在文档的最高层级内（也就是说，尽量作为 body 标签的直接子元素），以避免其他组件影响模态框的展现和/或功能。</code><br>
+		<code>2.千万不要在一个模态框上重叠另一个模态框。要想同时支持多个模态框，需要自己写额外的代码来实现。</code>
+
+		<h2 class="page-header">静态实例</h2>
+		<code>以下模态框包含了模态框的头、体和一组放置于底部的按钮。</code>
+		<code>由jquery实现对话框的弹出，不过不能关闭....</code>
+		<button class="btn btn-primary" id="button1">show modal</button>
+		<div class="modal" id="modal1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal"><span>&times;</span></button>
+						<h4 class="modal-title">对话框的头部</h4>
+					</div>
+					<div class="modal-body">
+						<p>对话框的内容...</p>
+					</div>	
+					<div class="modal-footer">
+						<button class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button class="btn btn-primary">learn more</button>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<h2 class="page-header">动态实例</h2>
+		<code>通过button的data-toggle和data-target属性实现对话框的弹出、消失</code><br>
+		<!-- 按钮 -->
+		<button data-toggle="modal" data-target="#mymodal" type="button" class="btn btn-primary">show modal</button>
+		<!-- 对话框 -->
+		<div class="modal fade" id="mymodal" role="dialog" >
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal"><span>&times;</span></button>
+						<h4 class="modal-title">警告</h4>
+					</div>
+					<div class="modal-body">
+						<p>很遗憾，您刚才的操作是非法的！</p>
+						<p>您可以点击<a href="" >此处</a>，获得相关规则。</p>
+						<p><a href="#" role="button" >button</a> </p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<h2 class="page-header">可选尺寸</h2>
+		<button class="btn btn-primary" data-toggle="modal" data-target="#lg_modal">大尺寸</button>
+		<button class="btn btn-primary" data-toggle="modal" data-target="#sm-modal">小尺寸</button>
+		<!-- 大尺寸对话框 -->
+		<div class="modal fade" id="lg_modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal"><span>&times;</span></button>
+						<h4 class="modal-title">大尺寸</h4>
+					</div>
+					<div class="modal-body">
+						<p>...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 小尺寸对话框 -->
+		<div class="modal fade" id="sm-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal"><span>&times;</span></button>
+						<h3 class="modal-title">小尺寸</h3>
+					</div>
+					<div class="modal-body">
+						<p>...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<h2 class="page-header">禁止动画效果</h2>
+		<code>如果你不需要模态框弹出时的动画效果（淡入淡出效果），删掉 .fade 类即可。</code>
+
+		<h1 class="page-header">用法</h1>
+		<p>通过 data 属性或 JavaScript 调用模态框插件，可以根据需要动态展示隐藏的内容。模态框弹出时还会为 <body> 元素添加<code> .modal-open</code> 类，从而覆盖页面默认的滚动行为，并且还会自动生成一个 .modal-backdrop 元素用于提供一个可点击的区域，点击此区域就即可关闭模态框。</p>
+
+		<h2 class="page-header">通过 data 属性</h2>
+		<p>不需写 JavaScript 代码也可激活模态框。通过在一个起控制器作用的元素（例如：按钮）上添加 <code>data-toggle="modal"</code> 属性，或者 <code>data-target="#foo"</code> 属性，再或者 <code>href="#foo"</code> 属性，用于指向被控制的模态框。</p>
+		<pre>&lt;button type="button" data-toggle="modal" data-target="#myModal"&gt;Launch modal&lt;/button&gt;</pre>
+
+		<h2 class="page-header">通过 JavaScript 调用</h2>
+		<p>只需一行 JavaScript 代码，即可通过元素的 id myModal 调用模态框：</p>
+		<pre>$('#myModal').modal(options)</pre>
+
+		<h2 class="page-header">方法</h2>
+		<p>.modal(options) <br>将页面中的某块内容作为模态框激活。接受可选参数 object。</p>
+		<pre>
+			$('#myModal').modal({
+				  keyboard: false
+				})
+		</pre>
+	</div>
+</body>
+</html>

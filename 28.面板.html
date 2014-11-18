@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>面板</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<script src="../bootstrap/js/jquery.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../bootstrap/js/holder.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<code>虽然不总是必须，但是某些时候你可能需要将某些 DOM 内容放到一个盒子里。对于这种情况，可以试试面板组件。</code>
+		<h1 class="page-header">基本实例</h1>
+		<code>默认的 .panel 组件所做的只是设置基本的边框（border）和内补（padding）来包含内容。</code>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<p> Basic panel example</p>
+			</div>
+		</div>
+
+		<h1 class="page-header">带标题的面板</h1>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Panel title</h3>
+			</div>
+			<div class="panel-body">
+				<p>panel content</p>
+			</div>
+		</div>
+	
+		<h1 class="page-header">带脚注的面板</h1>
+		<code>把按钮或次要的文本放入 .panel-footer 容器内。注意面版的脚注不会从情境效果中继承颜色，因为他们并不是主要内容。</code>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">panel title</h3>
+			</div>
+			<div class="panel-body">
+				<p>panel content</p>
+			</div>
+			<div class="panel-footer">
+				<p>panel footer</p>
+			</div>
+		</div>
+		
+		<h1 class="page-header">带表格的面板</h1>
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<h3 class="panel-title">panel title</h3>
+			</div>
+			<div class="panel-body">
+				<p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			</div>
+			<table class="table">
+				<tr>
+					<th>id</th>
+					<th>name</th>
+					<th>age</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>theqwang</td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>qiang</td>
+					<td>18</td>
+				</tr>
+			</table>
+		</div>
+		<code>如果没有 .panel-body ，面版标题会和表格连接起来，没有空隙。</code>
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h3 class="panel-title">panel title</h3>
+			</div>
+			<table class="table">
+				<tr>
+					<th>id</th>
+					<th>name</th>
+					<th>age</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>theqwang</td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>qiang</td>
+					<td>18</td>
+				</tr>
+			</table>
+		</div>
+		
+		<h1 class="page-header">带列表组的面版</h1>
+		<div class="panel panel-danger">
+			<div class="panel-heading">
+				<h3 class="panel-title">panel title</h3>
+			</div>
+			<div class="panel-body">
+				<p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			</div>
+			<ul class="list-group">
+				<li class="list-group-item">aaaaaaaa</li>
+				<li class="list-group-item">bbbbbbbb</li>
+				<li class="list-group-item">cccccc</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

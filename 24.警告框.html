@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>警告框</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<script src="../bootstrap/js/jquery.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../bootstrap/js/holder.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="page-header">警告框实例</h1>
+		<code>这有这四种颜色：info,success,warning,danger</code>
+		<div class="alert alert-success">
+			<p>Well done! You successfully read this important alert message.</p>
+		</div>
+		<div class="alert alert-info">
+			<p>Well done! You successfully read this important alert message.</p>
+		</div>
+		<div class="alert alert-warning">
+			<p>Well done! You successfully read this important alert message.</p>
+		</div>
+		<div class="alert alert-danger">
+			<p>Well done! You successfully read this important alert message.</p>
+		</div>
+
+		<h1 class="pahe-header">可关闭的警告框</h1>
+		<div class="alert alert-danger alert-dismissable">
+			<button class="close" data-dismiss="alert"><span>&times;</span></button>
+			<p>Well done! You successfully read this important alert message.</p>
+		</div>
+
+		<h1 class="page-header">警告框中的连接</h1>
+		<code>警告框中的连接要是class="alert-link"，这样a的颜色就会和警告框的颜色统一</code>
+		<div class="alert alert-danger">
+			<p><a class="alert-link" href="">This is a link!</a> Well done! You successfully read this important alert message.</p>
+		</div>
+	</div>
+</body>
+</html>

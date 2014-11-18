@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>按钮式下拉菜单</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<script src="../bootstrap/js/jquery.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../bootstrap/js/holder.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<code>把任意一个按钮放入 .btn-group 中，然后加入适当的菜单标签，就可以让按钮作为菜单的触发器了。</code>
+		<br>
+		<h1 class="page-header">单按钮下拉菜单</h1>
+		<div class="btn-group">
+			<button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+				info<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="">111</a></li>
+				<li><a href="">222</a></li>
+				<li><a href="">333</a></li>
+			</ul>
+		</div>
+
+		<h1 class="page-header">分裂式按钮下拉菜单</h1>
+		<div class="btn-group">
+			<button class="btn btn-primary">111</button>
+			<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="">222</a></li>
+				<li><a href="">333</a></li>
+				<li><a href="">444</a></li>
+			</ul>
+		</div>
+
+		<h1 class="page-header">向上弹出式菜单</h1>
+		<div class="btn-group dropup">
+			<button class="btn btn-danger">111</button>
+			<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="">222</a></li>
+				<li><a href="">333</a></li>
+				<li><a href="">444</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

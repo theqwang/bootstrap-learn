@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<script src="../bootstrap/js/jquery.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../bootstrap/js/holder.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>内联表单</h1>
+		<form action="" class="form-inline">
+			<div class="form-group">
+				<label for="name">name</label>
+				<input type="text" class="form-control" placeholder="邮箱" id="name">
+			</div>
+			<div class="form-group">
+				<label for="password">password</label>
+				<input type="password" class="form-control" placeholder="password" id="password">
+			</div>
+			<input type="submit" value="	OK" class="btn btn-primary">	
+		</form>
+		<hr>
+		<h1>水平排列的表单</h1>
+		<form action="" class="form-horizontal">
+			<div class="form-group ">
+				<div class="col-sm-1 control-label">
+					<label for="name">name</label>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" id="name" class="form-control" placeholder="email" readonly>
+				</div>
+			</div>
+			<div class="form-group has-error has-feedback">
+				<div class="col-sm-1 control-label">
+					<label for="password">password</label>
+				</div>
+				<div class="col-sm-4">
+	 				<input type="password" class="form-control" id="password" placeholder="密码">
+	 				<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+				</div>
+
+			</div>
+			<div class="form-group ">
+				<div class="col-sm-1 control-label">
+					<label for="">date</label>
+				</div>
+				<div class="col-sm-4">
+					<input type="date" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-1 control-label">
+					<label for="">爱好</label>
+				</div>
+				<div class="col-sm-4">
+					<select name="" id="" class="form-control">
+						<option value="">篮球</option>
+						<option value="">足球</option>
+						<option value="">唱歌</option>
+						<option value="" selected>绘画</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-2 col-sm-offset-1">
+					<input type="submit" class="btn btn-primary">
+				</div>
+			</div>
+
+		</form>
+	</div>
+</body>
+</html>

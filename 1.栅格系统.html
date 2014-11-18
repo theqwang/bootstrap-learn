@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>栅格系统</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<script src="../bootstrap/js/jquery.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../bootstrap/js/holder.min.js"></script>
+	<style>
+		.col-md-12{
+			background: #ccc;
+			margin-bottom: 10px;
+		}
+		div[class~="col-md"]{
+			background: blue;
+		}
+		.row{
+			margin-bottom: 10px;
+			background: #ccc;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<!-- Stack  columns on mobile by making one full-width and the other half-width -->
+		<div class="row">
+		  <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+		  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+		</div>
+
+		<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+		<div class="row">
+		  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+		  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+		  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+		</div>
+
+		<!-- Columns are always 50% wide, on mobile and desktop -->
+		<div class="row">
+		  <div class="col-xs-6">.col-xs-6</div>
+		  <div class="col-xs-6">.col-xs-6</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<script src="../bootstrap/js/jquery.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../bootstrap/js/holder.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<code>Bootstrap 中的导航组件都依赖同一个 .nav 类，状态类也是共用的。改变修饰类可以改变样式。</code>
+		<h1 class="page-header">标签页</h1>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="">111</a></li>
+			<li><a href="">222</a></li>
+			<li><a href="">333</a></li>
+		</ul>
+
+		<h1 class="page-header">胶囊式标签页</h1>
+		<ul class="nav nav-pills">
+			<li class="active"><a href="">首页</a></li>
+			<li><a href="">更多</a></li>
+			<li><a href="">关于</a></li>
+		</ul>
+
+		<h1 class="page-header">垂直式胶囊标签页</h1>
+		<ul class="nav nav-pills nav-stacked">
+			<li class="active"><a href="">home</a></li>
+			<li><a href="">profile</a></li>
+			<li><a href="">about</a></li>
+		</ul>
+
+		<h1 class="pahe-header">两端对齐的标签页</h1>
+		<ul class="nav nav-tabs nav-justified">
+			<li class="active"><a href="">111</a></li>
+			<li><a href="">222</a></li>
+			<li><a href="">333</a></li>
+		</ul>
+		<br><br>
+		<ul class="nav nav-pills nav-justified">
+			<li class="active"><a href="">111</a></li>
+			<li><a href="">222</a></li>
+			<li><a href="">333</a></li>
+		</ul>
+
+		<h1 class="page-header">禁用的连接</h1>
+		<code>外观上市禁用了，实际还能点击，也就说bootstrap只是帮助我们把外观做好了，内部的功能还需要自己做。</code>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="">home</a></li>
+			<li><a href="">more</a></li>
+			<li class="disabled"><a href="">about</a></li>
+		</ul>
+
+		<h1 class="page-header">添加下拉菜单的导航</h1>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="">home</a></li>
+			<li><a href="">about</a></li>
+			<li>
+				<a href="" data-toggle="dropdown" class="dropdown-toggle">
+					more<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="">111</a></li>
+					<li><a href="">222</a></li>
+					<li><a href="">333</a></li>
+				</ul>
+			</li>
+		</ul>
+		<br><br>
+
+		<ul class="nav nav-pills">
+			<li class="active"><a href="">home</a></li>
+			<li><a href="">about</a></li>
+			<li>
+				<a href="" data-toggle="dropdown" class="dropdown-toggle">
+					more<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="">111</a></li>
+					<li><a href="">222</a></li>
+					<li><a href="">333</a></li>
+				</ul>
+			</li>
+		</ul>
+		<br><br><br>
+	</div>
+</body>
+</html>

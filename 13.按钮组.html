@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>按钮组</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<script src="../bootstrap/js/jquery.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../bootstrap/js/holder.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="page-header">基本实例</h1>
+		<div class="btn-group">
+			<button class="btn btn-primary">123</button>
+			<button class="btn btn-success">456</button>
+			<button class="btn btn-warning">789</button>
+		</div>
+
+		<h1 class="page-header">按钮工具栏</h1>
+		<div class="btn-toolbar">
+			<div class="btn-group">
+				<button class="btn btn-primary">111</button>
+				<button class="btn btn-primary">222</button>
+				<button class="btn btn-primary">333</button>
+			</div>
+			<div class="btn-group">
+				<button class="btn btn-primary">444</button>
+				<button class="btn btn-primary">555</button>
+			</div>
+			<button class="btn btn-primary">666</button>
+		</div>
+
+		<h1 class="page-header">尺寸</h1>
+		<code>在btn-group上设置尺寸，可以一起改变所有按钮的大小</code><br>
+		<div class="btn-group btn-group-lg">
+			<button class="btn btn-success">lg</button>
+			<button class="btn btn-success">lg</button>
+			<button class="btn btn-success">lg</button>
+		</div>
+		<div class="btn-group ">
+			<button class="btn btn-success">default</button>
+			<button class="btn btn-success">default</button>
+			<button class="btn btn-success">default</button>
+		</div>
+		<div class="btn-group btn-group-sm">
+			<button class="btn btn-success">sm</button>
+			<button class="btn btn-success">sm</button>
+			<button class="btn btn-success">sm</button>
+		</div>
+		<div class="btn-group btn-group-xs">
+			<button class="btn btn-success">xs</button>
+			<button class="btn btn-success">xs</button>
+			<button class="btn btn-success">xs</button>
+		</div>
+
+		<h1 class="page-header">嵌套下拉菜单</h1>
+		<code>想要把下拉菜单混合到一系列按钮中，只须把 .btn-group 放入另一个 .btn-group 中。</code><br>
+		<div class="btn-group">
+			<button class="btn btn-danger" >111</button>
+			<button class="btn btn-danger">222</button>
+			<button class="btn btn-danger">333</button>
+			<!--下拉菜单是一个单独的btn-group-->
+			<div class="btn-group">
+				<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+					更多<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="">444</a></li>
+					<li><a href="">555</a></li>
+					<li><a href="">666</a></li>
+					<li class="divider"></li>
+					<li><a href="">777</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<h1 class="page-header">垂直排列</h1>
+		<code>分列式按钮下拉菜单不支持这种方式。</code>
+		<div class="btn-group-vertical">
+			<button class="btn btn-primary">111</button>
+			<button class="btn btn-primary">222</button>
+			<div class="btn-group">
+				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					more<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="">333</a></li>
+					<li><a href="">444</a></li>
+					<li><a href="">555</a></li>
+					<li><a href="">666</a></li>
+					<li><a href="">777</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<h1 class="page-header">两端对齐排列的按钮组</h1>
+		<code>即按钮组的长度填满父元素的宽度</code><br/>
+		<code>按钮只能用a标签，不能用button标签才有效</code><br/>
+		<code>必须把每一个button标签都单独包裹进一个btn-group里才能有这种效果。</code>
+		<div class="btn-group btn-group-justified">
+			<a href="" class="btn btn-success">111</a>
+			<a href="" class="btn btn-success">222</a>
+			<a href="" class="btn btn-success">333</a>
+			<a href="" class="btn btn-success">444</a>
+		</div>
+		<br><br><br>
+
+	</div>
+</body>
+</html>
