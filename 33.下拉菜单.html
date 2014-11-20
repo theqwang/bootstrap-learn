@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下拉菜单</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/holder.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="dropdown">
+			<button class="btn btn-primary" data-toggle="dropdown">
+				菜单<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="">111</a></li>
+				<li><a href="">222</a></li>
+				<li><a href="">333</a></li>
+				<li class="divider"></li>
+				<li><a href="">444</a></li>
+			</ul>
+		</div>
+		<br><br>
+		<div class="btn-group">
+			<button class="btn btn-primary">信息</button>
+			<button class="btn btn-primary">设置</button>
+			<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">更多<span class="caret"></span></button>
+			<ul class="dropdown-menu">
+				<li><a href="">基本信息</a></li>
+				<li><a href="">修改密码</a></li>
+				<li><a href="">退出</a></li>
+			</ul>
+		</div>
+
+		<br><br>
+
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="">首页</a></li>
+			<li><a href="">关于</a></li>
+			<li>
+				<a href="#"  data-toggle="dropdown" class="dropdown-toggle">更多<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="">安全</a></li>
+					<li><a href="">私信</a></li>
+					<li><a href="">退出</a></li>
+			</ul>
+			</li>
+
+		</ul>
+	</div>
+</body>
+</html>
