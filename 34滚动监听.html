@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>滚动监听</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/holder.min.js"></script>
+	<style>
+		body{
+			padding-top: 70px;
+		}
+	</style>
+</head>
+<body data-target="#navbar-scroll" data-spy="scroll">
+	<nav id="navbar-scroll" class="navbar navbar-default navbar-fixed-top navbar-inverse">
+				<div class="navbar-header">
+					<a href="" class="navbar-brand">监听</a>
+					<!-- 小屏幕时的菜单按钮 -->
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#links">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- 导航条里的连接 -->
+				<div class="collapse navbar-collapse" id="links">
+					<!-- 普通链接。ul表示 -->
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#shouye">首页</a></li>
+						<li><a href="#neirong1">内容一</a></li>
+						<li><a href="#neirong2">内容二</a></li>
+						<li><a href="#jiewei">结尾</a></li>
+					</ul>
+				</div>
+		</nav>
+	<div class="container">
+			<div class="jumbotron">
+				<code>给导航条添加id="navbar-scroll"，然后监听body，给body添加data-target="#navbar-scroll" data-spy="scroll"，最后给导航条里的连接添加锚点</code>
+				<h1 id="shouye">首页</h1>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+			</div>
+			<div class="jumbotron">
+				<h1 id="neirong1">内容一</h1>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+				<p>水水水水水水水水对话阿斯顿水水水水谁谁谁水水水水哈顶顶顶顶顶顶顶顶顶顶斯顿</p>
+			</div>
+
+			<div class="jumbotron">
+				<h1 id="neirong2">内容二</h1>
+				<p>急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急</p>
+				<p>急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急</p>
+				<p>急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急</p>
+				<p>急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急</p>
+				<p>急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急</p>
+				<p>急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急</p>
+				<p>急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急</p>
+				<p>急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急急</p>
+			</div>
+
+			<div class="jumbotron">
+				<h1 id="jiewei">结尾</h1>
+				<p>娃娃哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇轻轻巧巧</p>
+				<p>娃娃哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇轻轻巧巧</p>
+				<p>娃娃哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇轻轻巧巧</p>
+				<p>娃娃哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇轻轻巧巧</p>
+				<p>娃娃哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇轻轻巧巧</p>
+				<p>娃娃哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇轻轻巧巧</p>
+				<p>娃娃哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇轻轻巧巧</p>
+				<p>娃娃哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇轻轻巧巧</p>
+			</div>
+	</div>
+</body>
+</html>
