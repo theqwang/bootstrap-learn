@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹出框</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/holder.min.js"></script>
+	<script>
+		$(function(){
+			$("button[data-toggle=popover]").popover({"trigger":"hover","html":"true"});
+		})
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="page-header">弹出框</h1>
+		<code>弹出框也是需要一段javascript代码初始化还会出现效果$("button[data-toggle=popover]").popover({"trigger":"hover","html":"true"});</code><br>
+		<button class="btn btn-danger btn-lg" data-toggle="popover" title="警告" data-content="这就是弹出框，<br>传递参数，使html代码也可以有效">click to show popover</button>
+	</div>
+</body>
+</html>
