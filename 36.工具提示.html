@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>工具提示</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/holder.min.js"></script>
+	<script>
+		$(function(){
+			$("button[data-toggle=tooltip]").tooltip();
+			$("a[data-toggle=tooltip]").tooltip();
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="page-header">提示</h1>
+		<code>tooltip效果可以通过这段javascript代码激活：$("button[data-toggle=tooltip]").tooltip(); 不然没有效果</code><br><br>
+			<button class="btn btn-primary" data-toggle="tooltip" title="tooltip 默认在顶端" data-placement="top" >tooltip on top</button>
+			<button class="btn btn-primary" data-toggle="tooltip" title="tooltip 下面" data-placement="bottom">bottom</button>
+			<button class="btn btn-primary" data-toggle="tooltip" title="tooltip 左边" data-placement="left">left</button>
+			<button class="btn btn-primary" data-toggle="tooltip" title="tooltip 左边" data-placement="right">right</button>
+
+			<br><br>
+			<p>这里是超链接的<a href="" data-toggle="tooltip" title="超链接的tooltip">tooltip</a>实例效果。</p>
+	</div>
+</body>
+</html>
