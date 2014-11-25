@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>按钮</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/holder.min.js"></script>
+	<script>
+		$(function(){
+			$("#myButton").click(function(){
+				var $loadbtn=$(this).button("loading");
+				window.setTimeout(
+						function(){
+							alert("然后可以进行其他操作，例如跳转操作");
+							$("#myButton").button("reset"); //重置按钮
+						},
+						1500 //定时器的延迟时间
+						        ); //这里使用了javascript的定时器
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h2 class="page-header">loading效果</h2>
+		<button id="myButton" class="btn btn-primary" data-loading-text="loading....">加载</button>
+	</div>
+</body>
+</html>
